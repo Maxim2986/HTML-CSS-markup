@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+[class^="block"] {
+	/* width: 50px; */
+	/* height: 50px; */
+	background: #ccc;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: italic;
+	color: #f00;
+	outline: 1px solid #f00;
+	margin: 3px;
+	flex-grow: 3 2 ;
+}
+
+.block-block1 {
+	order: 0;
+
+}
+
+.block-block2 {
+	order: 0;
+	flex-grow: 0;
+}
+
+.block-block3 {
+	order: 0;
+}
+
+
+p {
+	text-align: center;
+	/* line-height: 50px; */
+}
+
+.wrapper {
+	display: flex;
+	/* flex-direction: row; */
+	/* flex-wrap: wrap; */
+	/* flex-flow: row wrap-reverse; */
+	/* justify-content: flex-start; */
+	/* align-items: flex-start; */
+	/* align-content: stretch; */
+
+	height: 500px;
+	width: 650px;
+	outline: 1px solid #ccc;
+	margin: 20px auto;
+
+}
+
