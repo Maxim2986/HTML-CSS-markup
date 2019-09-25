@@ -1,0 +1,48 @@
+//@import "imports/mixin";
+
+.mobile-nav, .mobile-menu-link {
+    display: none;
+}
+
+.header {
+    padding: 20px 0;
+    .container {
+        @include layout;
+        .menu-left, .menu-right {
+            display: flex;
+            align-items: center;
+            flex-grow: 2;
+            li + li { margin-left: 30px; }
+            li {
+                a {
+                    font-weight: 600;
+                    color: inherit;
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 60%;
+                        height: 1px;
+                        background: $primaryColor;
+                        transform: translateX(30%) scale(0);
+                    }
+                    &:hover {
+                        color: darken($primaryColor, 15%);
+                        &::after {
+                            transform: translateX(30%) scale(1);
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+                }
+            }
+            .current a {
+                color: $primaryColor;
+            }
+        }
+        .menu-left { justify-content: flex-end; }
+        .logo {
+            display: flex;
+            justify-content: center;
+            flex-grow: 4;
+        }
+    }
+}

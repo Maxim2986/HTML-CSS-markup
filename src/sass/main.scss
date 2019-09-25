@@ -1,0 +1,33 @@
+@import "imports/reset";
+@import "imports/fonts";
+@import "imports/mixin";
+@import "imports/var" ;
+
+@import "header";
+@import "main_content";
+//@import "footer";
+
+body {
+    font: 500 14px/1.5 'open_sansregular', Arial, Sans-Serif;
+    color: #555555;
+    min-width: 320px;
+    background: #ffffff;
+}
+
+//html, body {
+//    position: relative;
+//    height: 100%;
+//}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px ;
+}
+
+
+@import "imports/media";
+
+
+

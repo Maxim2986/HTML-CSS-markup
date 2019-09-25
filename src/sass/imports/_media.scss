@@ -1,0 +1,219 @@
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1200px) {
+  section.bg_form .container #form {
+    margin-right: 15px;
+  }
+  section.bg_form .container .title-block h1,
+  section.bg_form .container .title-block .descr-title {
+    max-width: 100%;
+  }
+
+  section#reservation .container .row .info-block-program { max-width: 490px;  }
+  section#reservation .container .row .info-block-program .descr-block { padding: 15px 10px; }
+}
+
+@media all and (max-width: 1120px) {
+}
+
+@media all and (max-width: 992px) {
+  section.bg_form .container #form {
+    margin-right: 0;
+  }
+
+  .row .info-block-program:last-child {
+    margin-top: 12px;
+  }
+  //.main {
+  //    .swiper-container {
+  //        .descr {
+  //            h1 {
+  //                font-size: 28px;
+  //            }
+  //            h2 {
+  //                font-size: 20px;
+  //            }
+  //        }
+  //        .button {
+  //            margin-top: 15px;
+  //            min-width: 140px;
+  //            font-size: 14px;
+  //            height: 35px;
+  //        }
+  //        p {
+  //            font-size: 14px;
+  //        }
+  //        .swiper-pagination-bullets {
+  //            bottom: 15px;
+  //        }
+  //    }
+  //}
+}
+
+@media all and (max-width: 768px) {
+
+  .header .container .menu-left,
+  .header .container .menu-right {
+    display: none;
+  }
+  .header {
+    padding: 5px 0;
+    .container {
+      align-items: center;
+    }
+}
+
+  .nav,
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .mobile-menu-link {
+    display: block;
+    text-indent: -9999px;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    //margin-left: 15px;
+  }
+  .mobile-menu-link span {
+    height: 4px;
+    background: $primaryColor;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15%;
+    &:hover {
+      background: #cccccc !important;
+    }
+
+  }
+  .mobile-menu-link span:before,
+  .mobile-menu-link span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: $primaryColor;
+    border-radius: 15%;
+    &:hover {
+      background: #cccccc !important;
+    }
+  }
+  .mobile-menu-link span:before {
+    top: -12px;
+  }
+  .mobile-menu-link span:after {
+    bottom: -12px;
+  }
+
+  .mm-panels {
+    display: none !important;
+  }
+
+  .mobile-menu-link span:hover,
+  .mobile-menu-link span:after:hover,
+  .mobile-menu-link span:before:hover {
+    background: #cccccc !important;
+  }
+
+  .mm-wrapper_opening .mm-menu_position-front {
+    z-index: 15;
+  }
+  .mm-panel, .mm-panels {
+    background: #cccccc;
+    #menu {
+      li a {
+        color: $primaryColor;
+        &:hover {
+          color: darken($primaryColor, 20%);
+        }
+      }
+    }
+  }
+  .nav {
+    li + li {
+      margin-top: 5px;
+    }
+    padding: 20px;
+    a {
+      text-transform: uppercase;
+      //color: $secondColor;
+      &:hover {
+        text-decoration: underline;
+        //color: darken($secondColor, 10%);
+        transition: all 0.3s ease-out;
+      }
+    }
+    menu {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  section.bg_form {
+    padding: 15px 0;
+    height: 100%;
+  }
+
+  section.bg_form .container .title-block {
+    text-align: center;
+  }
+
+  section#reservation { padding: 25px 0; }
+  section#reservation .container h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  section#reservation .container p.descr-title {
+    font-size: 46px;
+    margin-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section#reservation .container .row .info-block-program { flex-wrap: wrap; }
+  section#reservation .container .row .info-block-program img { max-width: 100%; }
+  section#reservation .container .row .info-block-program .descr-block h3 { margin-bottom: 10px; }
+  section#reservation .container .row .info-block-program .descr-block p {margin-bottom: 5px; }
+  section.bg_form .container #form { min-width: 260px; }
+
+}
+
+@media all and (max-width: 460px) {
+  .logo img {
+    max-width: 75%;
+  }
+
+  .container #form {
+    min-width: 250px;
+    padding: 10px 0;
+  }
+
+  section.bg_form .container #form .title-form {
+    margin-bottom: 10px;
+  }
+  section.bg_form .container #form p:nth-child(n+3) {
+    margin-top: 10px;
+  }
+  section.bg_form .container #form input,
+  section.bg_form .container #form select,
+  section.bg_form .container #form .btn {
+    height: 35px;
+  }
+
+  section.bg_form .container .title-block h1 { font-size: 34px; }
+  section.bg_form .container .title-block .descr-title {
+    font-size: 32px;
+    padding-top: 15px;
+  }
+}
+
+@media all and (max-width: 320px) {
+}
+

@@ -1,0 +1,47 @@
+//@import "var";
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+body, h1, h2, h3, h4, h5, p, figure {
+    margin: 0;
+    padding: 0;
+}
+ul, menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+*:hover {
+    transition: all 0.2s linear;
+}
+
+*:focus {
+    outline: none;
+    border: none;
+}
+
+* { outline: none !important; }
+
+*:focus { outline: none !important; }
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+}
+
+
+
+

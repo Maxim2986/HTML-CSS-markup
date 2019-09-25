@@ -1,0 +1,61 @@
+@mixin layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin inline-layout {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+@mixin layout-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin layout-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin layout-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin layout-betwen-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin layout-column-center {
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+}
+
+//@mixin button-submit {
+//    font-family: "ralewayextrabold", SansSerif;
+//    font-size: 14px;
+//    min-width: 170px;
+//    height: 45px;
+//    background: #998675;
+//    border-radius: 5px;
+//    box-shadow: 0 3px 0 0 #736357;
+//    margin: 35px 0 0 0;
+//    text-transform: uppercase;
+//    color: #fff;
+//    border: none;
+//    cursor: pointer;
+//    &:hover {
+//        background: darken(#998675, 10%);
+//    }
+//}
+
+
+
