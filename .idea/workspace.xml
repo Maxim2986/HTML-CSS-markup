@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71badc48-2975-4755-b973-f75a8facb000" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/main.scss" afterPath="$PROJECT_DIR$/src/sass/main.scss" />
-    </list>
+    <list default="true" id="71badc48-2975-4755-b973-f75a8facb000" name="Default" comment="" />
     <ignored path="Test_dZENcode.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -359,12 +357,12 @@
       <workItem from="1569328182267" duration="11978000" />
       <workItem from="1569349819727" duration="11529000" />
       <workItem from="1569389587734" duration="6822000" />
-      <workItem from="1569404243920" duration="4277000" />
+      <workItem from="1569404243920" duration="4853000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54463000" />
+    <option name="totallyTimeSpent" value="55039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
