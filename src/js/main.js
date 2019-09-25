@@ -31,27 +31,15 @@ $(document).ready(function () {
     });
 });
 
-// Header-scroll
-// jQuery(function(jQuery) {
-//     jQuery(window).scroll(function(){
-//         if(jQuery(this).scrollTop()>140){
-//             jQuery('.header').addClass('header-scroll');
-//         }
-//         else if ($(this).scrollTop()<140){
-//             jQuery('.header').removeClass('header-scroll');
-//         }
-//     });
-// });
 
-
-// $(document).ready(function(){
-//     $(".nav, .arrow").on("click","a", function (event) {
-//         event.preventDefault();
-//         var id  = $(this).attr('href'),
-//             top = $(id).offset().top + (-50);
-//         $('body,html').animate({scrollTop: top}, 1500);
-//     });
-// });
+$(document).ready(function(){
+    $("menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top + (-50);
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
 
 // Animate
 //    AOS.init();

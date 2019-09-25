@@ -1,4 +1,3 @@
-
 //HOME SECTION
 
 section.bg_form {
@@ -29,12 +28,16 @@ section.bg_form {
       z-index: 2;
       margin-right: 80px;
       padding: 30px 0;
-      p:nth-child(n+2) { text-align: center; }
+      p:nth-child(n+2) {
+        text-align: center;
+      }
       p:last-child {
         padding: 0 35px;
         text-align: right;
       }
-      p:nth-child(n+3) { margin-top: 25px; }
+      p:nth-child(n+3) {
+        margin-top: 25px;
+      }
       .title-form {
         font: 600 26px/1.5 "open_sanssemibold";
         text-transform: capitalize;
@@ -42,8 +45,12 @@ section.bg_form {
         margin-bottom: 30px;
         padding: 0 35px;
       }
-      input { padding-left: 4px; }
-      select { cursor: pointer; }
+      input {
+        padding-left: 4px;
+      }
+      select {
+        cursor: pointer;
+      }
       input, select {
         width: 230px/300px*100%;
         height: 45px;
@@ -101,7 +108,9 @@ section#reservation {
       text-align: center;
       margin-bottom: 60px;
     }
-    .row + .row { margin-top: 30px; }
+    .row + .row {
+      margin-top: 30px;
+    }
     .row {
       display: flex;
       justify-content: space-around;
@@ -123,12 +132,51 @@ section#reservation {
             text-transform: uppercase;
             margin-bottom: 30px;
           }
-          p { margin-bottom: 20px; }
+          p {
+            margin-bottom: 20px;
+          }
           span.leading {
             color: lighten($mainColorFont, 25%);
           }
         }
       }
     }
+  }
+}
+
+//Yoga GALLERY SECTION
+
+section#gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .item-gallery {
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    &:hover::before {
+      content: '';
+      background: darken($primaryColor, 25%);
+      opacity: 0.8;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &:hover::after {
+      content: '';
+      background: url("../images/zoom.png") no-repeat;
+      width: 57px;
+      height: 57px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+    //max-width: 460px;
   }
 }

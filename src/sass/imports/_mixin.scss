@@ -39,6 +39,11 @@
     //align-items: center;
 }
 
+@mixin media-layot {
+    flex-direction: column;
+    align-items: center;
+}
+
 //@mixin button-submit {
 //    font-family: "ralewayextrabold", SansSerif;
 //    font-size: 14px;

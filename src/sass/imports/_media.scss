@@ -23,9 +23,9 @@
     margin-right: 0;
   }
 
-  .row .info-block-program:last-child {
-    margin-top: 12px;
-  }
+  .row .info-block-program:last-child { margin-top: 12px; }
+
+  section#gallery .item-gallery { width: 50%; }
   //.main {
   //    .swiper-container {
   //        .descr {
@@ -212,6 +212,10 @@
     font-size: 32px;
     padding-top: 15px;
   }
+
+  section#gallery .item-gallery { width: 100%; }
+
+
 }
 
 @media all and (max-width: 320px) {
