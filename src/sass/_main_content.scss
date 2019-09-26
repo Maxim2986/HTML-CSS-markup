@@ -102,6 +102,7 @@ section#reservation {
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 25px;
+      color: $primaryColor;
     }
     p.descr-title {
       font: 500 50px/1 "Freestyle Script";
@@ -177,6 +178,124 @@ section#gallery {
       transform: translate(-50%, -50%);
       z-index: 2;
     }
-    //max-width: 460px;
+  }
+}
+
+//ABOUT SECTION
+
+section#about {
+  padding: 100px 0;
+  .container {
+    @include layout;
+    flex-wrap: wrap;
+    .description-block {
+      max-width: 460px;
+      h2 {
+        font: 800 30px/1.5 "open_sansbold";
+        color: $primaryColor;
+        margin-bottom: 30px;
+      }
+    }
+    .wrapper-container {
+      position: relative;
+      .swiper-container {
+        max-width: 570px;
+      }
+      .swiper-button-next, .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        background-size: 14px 46px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0px 0px 7px 1px #f2f2f2;
+      }
+      .swiper-button-next { right: -15px; }
+      .swiper-button-prev { left: -15px; }
+    }
+  }
+}
+
+//BENEFITS SECTION
+
+section#benefits {
+  background: url("../images/yoga-bg_2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0;
+  &:after {
+    content: '';
+    background: darken($primaryColor, 20%);
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .row + .row { margin-top: 60px; }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      .item-benefits {
+        position: relative;
+        color: #ffffff;
+        z-index: 2;
+        text-align: center;
+        padding-top: 90px;
+        width: 25%;
+        &:before {
+          content: '';
+          background-image: url("../images/sprite.png");
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        h4 {
+          font: 800 18px/1.5 "open_sansbold";
+          text-transform: uppercase;
+        }
+        p {
+          margin-top: 25px;
+          line-height: 1.6;
+        }
+      }
+    }
+    .row:first-child {
+      .item-benefits:first-child {
+        &:before { background-position: -12px -11px; }
+      }
+      .item-benefits:nth-child(2) {
+        &:before { background-position: -111px -11px; }
+      }
+      .item-benefits:nth-child(3) {
+        &:before { background-position: -210px -11px; }
+      }
+      .item-benefits:nth-child(4) {
+        &:before { background-position: -309px -11px; }
+      }
+    }
+    .row:last-child {
+      .item-benefits:first-child {
+        &:before { background-position: -12px 83px; }
+      }
+      .item-benefits:nth-child(2) {
+        &:before { background-position: -111px 83px; }
+      }
+      .item-benefits:nth-child(3) {
+        &:before { background-position: -210px 83px; }
+      }
+      .item-benefits:nth-child(4) {
+        &:before { background-position: -309px 83px; }
+      }
+    }
+
   }
 }

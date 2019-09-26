@@ -246,7 +246,8 @@ section#reservation {
     font: 800 30px/1.5 "open_sansbold";
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    color: #5363db; }
   section#reservation .container p.descr-title {
     font: 500 50px/1 "Freestyle Script";
     text-align: center;
@@ -329,6 +330,123 @@ section#gallery {
               transform: translate(-50%, -50%);
       z-index: 2; }
 
+section#about {
+  padding: 100px 0; }
+  section#about .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    section#about .container .description-block {
+      max-width: 460px; }
+      section#about .container .description-block h2 {
+        font: 800 30px/1.5 "open_sansbold";
+        color: #5363db;
+        margin-bottom: 30px; }
+    section#about .container .wrapper-container {
+      position: relative; }
+      section#about .container .wrapper-container .swiper-container {
+        max-width: 570px; }
+      section#about .container .wrapper-container .swiper-button-next, section#about .container .wrapper-container .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        background-size: 14px 46px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 7px 1px #f2f2f2;
+                box-shadow: 0px 0px 7px 1px #f2f2f2; }
+      section#about .container .wrapper-container .swiper-button-next {
+        right: -15px; }
+      section#about .container .wrapper-container .swiper-button-prev {
+        left: -15px; }
+
+section#benefits {
+  background: url("../images/yoga-bg_2.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0; }
+  section#benefits:after {
+    content: '';
+    background: #2332a5;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  section#benefits .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%; }
+    section#benefits .container .row + .row {
+      margin-top: 60px; }
+    section#benefits .container .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      section#benefits .container .row .item-benefits {
+        position: relative;
+        color: #ffffff;
+        z-index: 2;
+        text-align: center;
+        padding-top: 90px;
+        width: 25%; }
+        section#benefits .container .row .item-benefits:before {
+          content: '';
+          background-image: url("../images/sprite.png");
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+        section#benefits .container .row .item-benefits h4 {
+          font: 800 18px/1.5 "open_sansbold";
+          text-transform: uppercase; }
+        section#benefits .container .row .item-benefits p {
+          margin-top: 25px;
+          line-height: 1.6; }
+    section#benefits .container .row:first-child .item-benefits:first-child:before {
+      background-position: -12px -11px; }
+    section#benefits .container .row:first-child .item-benefits:nth-child(2):before {
+      background-position: -111px -11px; }
+    section#benefits .container .row:first-child .item-benefits:nth-child(3):before {
+      background-position: -210px -11px; }
+    section#benefits .container .row:first-child .item-benefits:nth-child(4):before {
+      background-position: -309px -11px; }
+    section#benefits .container .row:last-child .item-benefits:first-child:before {
+      background-position: -12px 83px; }
+    section#benefits .container .row:last-child .item-benefits:nth-child(2):before {
+      background-position: -111px 83px; }
+    section#benefits .container .row:last-child .item-benefits:nth-child(3):before {
+      background-position: -210px 83px; }
+    section#benefits .container .row:last-child .item-benefits:nth-child(4):before {
+      background-position: -309px 83px; }
+
 body {
   font: 500 14px/1.5 'open_sansregular', Arial, Sans-Serif;
   color: #555555;
@@ -350,15 +468,40 @@ body {
   section#reservation .container .row .info-block-program {
     max-width: 490px; }
   section#reservation .container .row .info-block-program .descr-block {
-    padding: 15px 10px; } }
+    padding: 15px 10px; }
+  section#about .container .wrapper-container .swiper-container {
+    max-width: 520px; }
+  section#about .container .description-block {
+    max-width: 420px; } }
 
 @media all and (max-width: 992px) {
   section.bg_form .container #form {
     margin-right: 0; }
   .row .info-block-program:last-child {
     margin-top: 12px; }
-  section#gallery .item-gallery {
-    width: 50%; } }
+  section#gallery .item-gallery,
+  section#benefits .container .row .item-benefits {
+    width: 50%; }
+  section#about {
+    padding: 25px 0; }
+    section#about .container {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      section#about .container .description-block {
+        max-width: 100%;
+        text-align: justify;
+        margin-bottom: 15px; }
+        section#about .container .description-block h2 {
+          margin-bottom: 10px;
+          text-align: center; }
+  section#benefits {
+    padding: 25px 0; }
+    section#benefits .container .row + .row {
+      margin-top: 15px; }
+    section#benefits .container .row .item-benefits + .item-benefits {
+      margin-top: 15px; } }
 
 @media all and (max-width: 768px) {
   .header .container .menu-left,
@@ -464,7 +607,9 @@ body {
   section#reservation .container .row .info-block-program .descr-block p {
     margin-bottom: 5px; }
   section.bg_form .container #form {
-    min-width: 260px; } }
+    min-width: 260px; }
+  .swiper-button-next, .swiper-button-prev {
+    display: none; } }
 
 @media all and (max-width: 460px) {
   .logo img {
@@ -485,5 +630,6 @@ body {
   section.bg_form .container .title-block .descr-title {
     font-size: 32px;
     padding-top: 15px; }
-  section#gallery .item-gallery {
+  section#gallery .item-gallery,
+  section#benefits .container .row .item-benefits {
     width: 100%; } }
