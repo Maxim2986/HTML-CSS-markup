@@ -349,7 +349,8 @@ section#about {
       section#about .container .description-block h2 {
         font: 800 30px/1.5 "open_sansbold";
         color: #5363db;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        text-transform: uppercase; }
     section#about .container .wrapper-container {
       position: relative; }
       section#about .container .wrapper-container .swiper-container {
@@ -360,8 +361,8 @@ section#about {
         background-size: 14px 46px;
         background-color: #ffffff;
         border-radius: 50%;
-        -webkit-box-shadow: 0px 0px 7px 1px #f2f2f2;
-                box-shadow: 0px 0px 7px 1px #f2f2f2; }
+        -webkit-box-shadow: 0 0 7px 1px #f2f2f2;
+                box-shadow: 0 0 7px 1px #f2f2f2; }
       section#about .container .wrapper-container .swiper-button-next {
         right: -15px; }
       section#about .container .wrapper-container .swiper-button-prev {
@@ -446,6 +447,95 @@ section#benefits {
       background-position: -210px 83px; }
     section#benefits .container .row:last-child .item-benefits:nth-child(4):before {
       background-position: -309px 83px; }
+
+section#shop {
+  background: url("../images/flower_bg.png") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 100px 0; }
+  section#shop .container .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    section#shop .container .row .item-product {
+      width: 31.66667%;
+      text-align: center;
+      border-radius: 7px;
+      -webkit-box-shadow: 0 0 10px 2px #f0f0f0;
+              box-shadow: 0 0 10px 2px #f0f0f0;
+      text-transform: uppercase; }
+      section#shop .container .row .item-product .price-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        background: #5363db;
+        height: 140px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px; }
+        section#shop .container .row .item-product .price-block .price {
+          font: 800 32px/1.5 "open_sansbold";
+          margin: auto;
+          color: #ffffff; }
+          section#shop .container .row .item-product .price-block .price .number {
+            font-size: 66px; }
+          section#shop .container .row .item-product .price-block .price .month {
+            font-size: 18px;
+            font-weight: 500; }
+      section#shop .container .row .item-product .more {
+        background: #ffffff;
+        padding: 40px 0;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px; }
+        section#shop .container .row .item-product .more p {
+          font-size: 18px;
+          text-transform: uppercase; }
+        section#shop .container .row .item-product .more p:nth-child(-n+2) {
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          position: relative; }
+          section#shop .container .row .item-product .more p:nth-child(-n+2):after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            border-bottom: 1px solid #555555;
+            width: 30%; }
+        section#shop .container .row .item-product .more p:last-of-type {
+          margin-bottom: 30px; }
+        section#shop .container .row .item-product .more button {
+          width: 170px;
+          height: 50px;
+          background: #5363db;
+          border-radius: 20px;
+          font-size: 18px;
+          color: #ffffff;
+          border: none;
+          cursor: pointer; }
+          section#shop .container .row .item-product .more button:hover {
+            background: #7d89e4;
+            -webkit-transition: all 0.25s ease-in-out;
+            -o-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out; }
+      section#shop .container .row .item-product:hover .price-block {
+        background: #7d89e4;
+        -webkit-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer; }
 
 body {
   font: 500 14px/1.5 'open_sansregular', Arial, Sans-Serif;
@@ -586,14 +676,35 @@ body {
     height: 100%; }
   section.bg_form .container .title-block {
     text-align: center; }
-  section#reservation {
+  section#reservation,
+  section#shop {
     padding: 25px 0; }
   section#reservation .container h2 {
     font-size: 26px;
     margin-bottom: 10px; }
   section#reservation .container p.descr-title {
     font-size: 46px;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  section#shop .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section#shop .container .row .item-product + .item-product {
+      margin-top: 15px; }
+    section#shop .container .row .item-product {
+      width: 60%; }
+      section#shop .container .row .item-product .price-block {
+        height: 110px; }
+        section#shop .container .row .item-product .price-block .price {
+          font-size: 28px; }
+          section#shop .container .row .item-product .price-block .price .number {
+            font-size: 46px; }
+          section#shop .container .row .item-product .price-block .price .month {
+            font-size: 16px; }
+      section#shop .container .row .item-product .more p {
+        font-size: 14px; } }
 
 @media all and (max-width: 576px) {
   section#reservation .container .row .info-block-program {
@@ -609,7 +720,17 @@ body {
   section.bg_form .container #form {
     min-width: 260px; }
   .swiper-button-next, .swiper-button-prev {
-    display: none; } }
+    display: none; }
+  section#shop .container .row .item-product {
+    width: 90%; }
+  section#about .container .wrapper-container .swiper-container {
+    max-width: 380px; }
+  section#shop .container .row .item-product .price-block {
+    height: 80px; }
+  section#shop .container .row .item-product .more {
+    padding: 15px 0; }
+    section#shop .container .row .item-product .more p:last-of-type {
+      margin-bottom: 15px; } }
 
 @media all and (max-width: 460px) {
   .logo img {
@@ -632,4 +753,6 @@ body {
     padding-top: 15px; }
   section#gallery .item-gallery,
   section#benefits .container .row .item-benefits {
-    width: 100%; } }
+    width: 100%; }
+  section#about .container .wrapper-container .swiper-container {
+    max-width: 320px; } }
