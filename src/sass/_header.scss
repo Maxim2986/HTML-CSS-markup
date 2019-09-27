@@ -1,11 +1,20 @@
-//@import "imports/mixin";
 
 .mobile-nav, .mobile-menu-link {
     display: none;
 }
 
+.header-scroll {
+    padding: 10px 0;
+    box-shadow: 0 0 12px 3px #dfdfdf;
+    background: linear-gradient(to bottom, lighten($primaryColor, 30%), #ffffff);
+}
+
 .header {
-    padding: 20px 0;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
     .container {
         @include layout;
         .menu-left, .menu-right {

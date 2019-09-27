@@ -1,123 +1,48 @@
-.footer {
-    font-size: 14px;
-    p a {
-        color: #555555;
-    }
-    h4 {
-        font: 24px "ralewaysemibold", SansSerif;
-        color: $secondColor;
-    }
-    .data, .time {
-        font-size: 12px;
-        color: #534c44;
+footer {
+    a {
+        color: #ffffff;
+        &:hover { color: #dfdfdf; }
     }
     .footer-top {
-        padding: 60px 0;
-        background: #191919;
-        .post-footer {
-            padding: 12px 0;
-            .data {
-                margin-bottom: 5px;
-            }
-            .time {
-                margin-top: 5px;
-            }
-        }
-        .footer-block:first-child {
-            a.link-more {
-                display: inline-block;
-                margin-top: 1rem;
-                padding-right: 25px;
-                color: $secondColor;
-                position: relative;
-                &:after {
-                    content: '';
-                    border: 5px solid $secondColor;
-                    border-top-color: transparent;
-                    border-right-color: transparent;
-                    border-bottom-color: transparent;
-                    position: absolute;
-                    top: 0;
-                    right: 3%;
-                    transform: translateY(50%);
-                }
-            }
-        }
-        .footer-block:nth-child(2) {
-            div.post-footer:nth-of-type(2) {
-                .data {
-                    color: $secondColor;
-                }
-                p:last-child {
-                    color: $thirdcolor;
-                }
-            }
-            div.post-footer:nth-of-type(1),
-            div.post-footer:nth-of-type(2) {
-                border-bottom: 1px solid #252525;
-            }
-        }
-        .footer-block:nth-child(3) {
-            div.post-footer:nth-of-type(1),
-            div.post-footer:nth-of-type(2) {
-                border-bottom: 1px solid #252525;
-            }
-        }
-        .widget {
-            display: flex;
-            flex-wrap: wrap;
-            li {
-                flex-basis: 45%;
-                margin: 5px;
-                &:hover {
-                    box-shadow: 0 0 3px 1px #ffffff;
-                    transition: box-shadow 0.2s ease-in-out;
-                }
-            }
-        }
-        .email a, .tag {
-            color: #007bff;
-        }
-    }
-    .footer-bottom {
-        font: 14px 'Myriad Pro', SansSerif;
-        background: #111111;
-        padding: 25px 0;
+        padding: 100px 0;
+        background: $primaryColor;
+        color: #ffffff;
         .container {
-            @include layout;
-            .list-footer-left {
-                display: flex;
-                li:nth-child(3) {
+            display: flex;
+            .info-block:first-child {
+                width: 40%;
+                h5 {
+                    font: 800 32px/1.5 "open_sansbold";
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                }
+                .social {
+                    margin-top: 50px;
+                    a + a { margin-left: 10px; }
                     a {
-                        color: $thirdcolor;
+                        display: inline-block;
                     }
                 }
             }
-            .list-footer-right {
-                display: flex;
+            .info-block:nth-child(n + 2) {
+                width: 30% ;
+                text-align: center;
+                h5 {
+                    font: 800 32px/1.5 "open_sansbold";
+                    text-transform: uppercase;
+                    margin-bottom: 40px;
+                }
+                .tag { text-indent: -9999px; }
+                div + div { margin-top: 50px; }
             }
-            li {
-                padding: 0 12px;
-                position: relative;
-                &:before {
-                    content: '|';
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                }
-                span {
-                    color: #838383;
-                }
-                a {
-                    color: #555555;
-                    display: inline-block;
-                }
-            }
-            li:last-child:before { display: none; }
+        }
+    }
+    .footer-bottom {
+        padding: 40px 0;
+        background: darken($primaryColor, 15%);
+        .container p {
+            text-align: center;
+            color: #ffffff;
         }
     }
 }
-
-
-
-

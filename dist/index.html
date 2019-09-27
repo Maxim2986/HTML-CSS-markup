@@ -19,11 +19,11 @@
             <li class="mnu-item"><a href="#gallery">Gallery</a></li>
         </menu>
         <div class="logo">
-            <a href="#home"><img src="images/logo.png" alt="logo" width="68" height="68"></a>
+            <a href="#"><img src="images/logo.png" alt="logo" width="68" height="68"></a>
         </div>
         <menu class="menu-right">
             <li class="mnu-item"><a href="#benefits">Blog</a></li>
-            <li class="mnu-item"><a href="#elements">Elements</a></li>
+            <li class="mnu-item"><a href="#rewiews">Elements</a></li>
             <li class="mnu-item"><a href="#shop">Shop</a></li>
         </menu>
         <menu id="menu" class="mobile-nav nav">
@@ -31,7 +31,7 @@
             <li class="mnu-item"><a href="#reservation">Reservation</a></li>
             <li class="mnu-item"><a href="#gallery">Gallery</a></li>
             <li class="mnu-item"><a href="#benefits">Blog</a></li>
-            <li class="mnu-item"><a href="#elements">Elements</a></li>
+            <li class="mnu-item"><a href="#rewiews">Elements</a></li>
             <li class="mnu-item"><a href="#shop">Shop</a></li>
         </menu>
     </div>
@@ -39,13 +39,13 @@
 <main class="main">
     <section class="bg_form">
         <div class="container">
-            <form id="form" action="">
+            <form id="form" action="#0">
                 <p class="title-form">Trial Class</p>
-                <p><input type="text" placeholder="Enter your name"></p>
-                <p><input type="text" placeholder="Enter your phone"></p>
+                <p><input type="text" pattern="[A-z][a-z]*" placeholder="Enter your name" required></p>
+                <p><input type="tel" pattern="[0-9]*" placeholder="Enter your phone" required></p>
                 <p><select name="select" id="select">
-                    <option disabled>Chose your class</option>
-                    <option value="Chose your">Chose your</option>
+                    <option >Chose your class</option>
+                    <option value="Chose your" >Chose your</option>
                     <option selected value="Chose your">Chose your class</option>
                 </select></p>
                 <p>
@@ -209,20 +209,19 @@
                         <button type="submit">Buy now</button>
                     </div>
                 </div>
-
                 <div class="item-product">
-                <div class="price-block">
-                    <div class="price">&#36;<span class="number">&nbsp; 69</span>
-                        <span class="month">&frasl;&nbsp;Month</span>
+                    <div class="price-block">
+                        <div class="price">&#36;<span class="number">&nbsp; 69</span>
+                            <span class="month">&frasl;&nbsp;Month</span>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <p>Entry date: mon &ndash; fri</p>
+                        <p>Entry time: 8a.m &ndash; 8p.m</p>
+                        <p>Nutrition advicer: yes</p>
+                        <button type="submit">Buy now</button>
                     </div>
                 </div>
-                <div class="more">
-                    <p>Entry date: mon &ndash; fri</p>
-                    <p>Entry time: 8a.m &ndash; 8p.m</p>
-                    <p>Nutrition advicer: yes</p>
-                    <button type="submit">Buy now</button>
-                </div>
-            </div>
                 <div class="item-product">
                     <div class="price-block">
                         <div class="price">&#36;<span class="number">&nbsp; 99</span>
@@ -237,10 +236,118 @@
                     </div>
                 </div>
             </div>
+            <div id="rewiews" class="slider-reviews-container">
+                <div class="slider-reviews swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="img-reviews">
+                                <img src="images/rewiews_slide.jpg" alt="rewiews_slide" width="160" height="160">
+                            </figure>
+                            <div class="text-rewiews">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p class="age-location">
+                                    <span>Trainer</span>
+                                    <span>Laura Shepard</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="img-reviews">
+                                <img src="images/rewiews_slide.jpg" alt="rewiews_slide" width="160" height="160">
+                            </figure>
+                            <div class="text-rewiews">
+                                <p>    &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                                    consequat. &ldquo;
+                                </p>
+                                <p class="age-location">
+                                    <span>Trainer</span>
+                                    <span>Laura Shepard</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="img-reviews">
+                                <img src="images/rewiews_slide.jpg" alt="rewiews_slide" width="160" height="160">
+                            </figure>
+                            <div class="text-rewiews">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p class="age-location">
+                                    <span>Trainer</span>
+                                    <span>Laura Shepard</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="img-reviews">
+                                <img src="images/rewiews_slide.jpg" alt="rewiews_slide" width="160" height="160">
+                            </figure>
+                            <div class="text-rewiews">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo
+                                    consequat.
+                                </p>
+                                <p class="age-location">
+                                    <span>Trainer</span>
+                                    <span>Laura Shepard</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
 </main>
-<footer class="footer"></footer>
+<footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="info-block">
+                <h5 class="tag">About</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui
+                    ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="social">
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://plus.google.com/"><i class="fab fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="info-block">
+                <h5>Contact us</h5>
+                <div class="geo"><i class="fas fa-map-marked-alt"></i> 5419 Joseph Mountains
+                    Apt. 716</div>
+                <div class="phone">
+                    <p><i class="fas fa-phone-volume"></i><a href="tel:+123456789">  +1 234 567 89</a></p>
+                    <p><a href="tel:+123456789">  +1 234 567 89</a></p>
+                </div>
+            </div>
+            <div class="info-block">
+                <h5 class="tag">More info</h5>
+                <div class="email"><i class="far fa-envelope"></i><a href="mailto:joga.info@example.com"> joga.info@example.com</a></div>
+                <div class="site"><i class="fas fa-globe-americas"></i><a href="www.example.com"> www.example.com</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>Copyright  &copy;  2016-2017 Yoga classes</p>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/all-fontawesome.js"></script>

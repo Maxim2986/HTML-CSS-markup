@@ -1,3 +1,8 @@
+.main { margin-top: 100px; }
+
+//form {
+//    > input[type=”text”]
+//}
 //HOME SECTION
 
 section.bg_form {
@@ -7,7 +12,7 @@ section.bg_form {
     position: relative;
     &:after {
         content: '';
-        background: darken($primaryColor, 20%);
+        background: darken($primaryColor, 20%) ;
         opacity: 0.6;
         height: 100%;
         width: 100%;
@@ -326,10 +331,9 @@ section#benefits {
 //SECTION SHOP
 
 section#shop {
-    background: url("../images/flower_bg.png") no-repeat 50% 50%;
-    //height: 984px;
-    background-size: cover;
-    padding: 100px 0;
+    background: url("../images/flower_bg.png") no-repeat 400px 143%;;
+    background-size: contain;
+    padding: 100px 0 200px;
     .container {
         .row {
             @include layout-around;
@@ -382,7 +386,9 @@ section#shop {
                             width: 30%;
                         }
                     }
-                    p:last-of-type { margin-bottom: 30px; }
+                    p:last-of-type {
+                        margin-bottom: 30px;
+                    }
                     button {
                         width: 170px;
                         height: 50px;
@@ -398,7 +404,7 @@ section#shop {
                         }
                     }
                 }
-                &:hover  {
+                &:hover {
                     .price-block {
                         background: lighten($primaryColor, 10%);
                         transition: all 0.25s ease-in-out;
@@ -408,4 +414,69 @@ section#shop {
             }
         }
     }
+
+    //REWIEWS
+    .slider-reviews-container {
+        position: relative;
+        .slider-reviews {
+            background: #ffffff;
+            height: 250px;
+            margin-top: 100px;
+            box-shadow: 0 0 10px 3px #f0f0f0;
+            border-radius: 10px;
+            padding: 0 100px 0 50px;
+            .swiper-wrapper {
+                margin: 0 auto;
+                .swiper-slide {
+                    @include layout-around;
+                    margin: 0 50px 0 0;
+                    .img-reviews {
+                        img {
+                            border-radius: 50%;
+                            padding: 10px;
+                            border: 2px solid #dedede;
+                        }
+                    }
+                    .text-rewiews {
+                        font-weight: 700;
+                        max-width: 650px;
+                        p:first-of-type {
+                            margin-bottom: 20px;
+                        }
+                        .age-location span {
+                            display: block;
+                        }
+                        .age-location span:last-child {
+                            font-weight: 800;
+                            font-size: 16px;
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            transform: translateY(-50%) rotate(90deg);
+            position: absolute;
+            right: -55px;
+            top: 50%;
+            .swiper-pagination-bullet {
+                width: 12px;
+                height: 12px;
+            }
+            .swiper-pagination-bullet + .swiper-pagination-bullet {
+                margin-left: 10px;
+            }
+        }
+
+        .swiper-container-horizontal > .swiper-pagination-bullets {
+            bottom: 10px !important;
+            .swiper-pagination-bullet {
+                background: $primaryColor;
+            }
+        }
+    }
 }
+
+
+

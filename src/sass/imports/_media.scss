@@ -69,6 +69,7 @@
             }
         }
     }
+    .swiper-pagination { display: none; }
 }
 
 @media all and (max-width: 768px) {
@@ -221,6 +222,30 @@
             }
         }
     }
+    footer {
+        .footer-top {
+            padding: 25px 0;
+            text-align: center;
+            .container {
+                flex-direction: column;
+                .info-block {
+                    width: 90% !important;
+                    h5 {
+                        margin-bottom: 10px !important;
+                        font-size: 26px !important;
+                    }
+                    .social { margin-bottom: 15px !important; }
+                    div + div { margin-top: 10px !important; }
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 10px 0;
+        }
+    }
+    section#shop .slider-reviews-container .slider-reviews .swiper-wrapper .swiper-slide .text-rewiews {
+        margin-left: 50px;
+    }
 }
 
 @media all and (max-width: 576px) {
@@ -257,6 +282,7 @@
             p:last-of-type { margin-bottom:  15px; }
         }
     }
+    section#shop .slider-reviews-container .slider-reviews { display: none;  }
 }
 
 @media all and (max-width: 460px) {
